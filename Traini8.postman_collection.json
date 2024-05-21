@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "7d04e6f1-a720-4105-af4f-0fcd6bd6e1ce",
+		"name": "Traini8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27533850"
+	},
+	"item": [
+		{
+			"name": "createTrainingCenter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"centerName\": \"Hindi Classes\",\r\n    \"centerCode\": \"asdfgh678253\",\r\n    \"address\": {\r\n        \"detailedAddress\": \"Vill - Pratappur , P.O - Chakaluva\",\r\n        \"city\": \"Kaldadungi\",\r\n        \"state\": \"Uttarakhand\",\r\n        \"pincode\": \"263139\"\r\n    },\r\n    \"studentCapacity\": 30,\r\n    \"coursesOffered\": [\r\n        \"C++\",\"Java\",\"python\"\r\n    ],\r\n    \"email\": \"manish@gmail.com\",\r\n    \"contactPhone\": \"1234567890\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/v1/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"v1",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchTrainingCenter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/v1/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"v1",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
